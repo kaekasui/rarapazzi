@@ -1,0 +1,27 @@
+%p#notice= notice
+
+%p
+  %b Brand:
+  = @event.brand_id
+%p
+  %b Latitude:
+  = @event.latitude
+%p
+  %b Longitude:
+  = @event.longitude
+%p
+  %b Address:
+  = @event.address
+%p
+  %b Description:
+  = @event.description
+%p
+  %b Title:
+  = @event.title
+%p
+  %b Datetime:
+  = @event.datetime
+
+= link_to 'Edit', edit_event_path(@event)
+\|
+= link_to 'Back', events_path
