@@ -1,9 +1,29 @@
-!!!5
+!!!
 %html
   %head
-    %title HamlApp
     = stylesheet_link_tag   'application', media: 'all'
     =javascript_include_tag 'application'
     =csrf_meta_tags
-    %head
+    %meta{:charset => "UTF-8"}/
+    %title paparazzi
+  %body
+    %nav.navbar.navbar-inverse
+      .navbar-header
+        %button.navbar-toggle.cpllapse{"data-target" => "#collapse-header", "data-toggle" => "collapse", :type => "button"}
+          %span.sr-only Toggle navigation
+          %span.icon-bar
+          %span.icon-bar
+          %span.icon-bar
+        %a.navbar-brand{:href => "firstview.html"} PAPARAZZI
+      #collapse-header.collapse.navbar-collapse
+        %ul.nav.navbar-nav.navbar-right
+          %li
+            %a{:href => "about.html"} ABOUT
+          %li
+            %a{:href => "thirdview.html"} ブランド一覧
+          %li
+            %a{:href => "inquiry.html"} お問い合わせ
+          %li
+            %i.fa.fa-twitter.fa-2x
+
     =yield

@@ -25,3 +25,8 @@
 = link_to 'Edit', edit_event_path(@event)
 \|
 = link_to 'Back', events_path
+
+- @hoge.each do |h|
+  - Instagram.location_recent_media(h.id).each do |media|
+    = link_to media.link, :target => "_blank" do
+      =image_tag(media.images.low_resolution.url)

@@ -1,8 +1,9 @@
 class ExampleController < ApplicationController
   def index
     @events = Event.all
+    @medias = Instagram.tag_recent_media(URI.encode("techlabpaak"))
+    @hoge = Instagram.location_search("37.7808851", "-122.3948632")
 
-    @events = Event.all
 
     @hash = Gmaps4rails.build_markers(@events) do |event, marker|
       marker.lat event.latitude

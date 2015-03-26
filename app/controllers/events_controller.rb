@@ -10,6 +10,7 @@ class EventsController < ApplicationController
   # GET /events/1
   # GET /events/1.json
   def show
+    @hoge = Instagram.location_search(@event.latitude, @event.longitude)
   end
 
   # GET /events/new
