@@ -1,0 +1,27 @@
+@import "bootstrap-sprockets"
+@import "bootstrap"
+@import "*"
+
+/*フッター設定*/
+.footer
+  height: 100px
+  margin: 0 auto
+  background-color: #F0EA40
+
+/* レスポンシブ対応*/
+@media (max-width: 1000px)
+@media (max-width: 800px)
+  .container
+    height: auto
+  .gmap
+    height: auto
+    width: auto
+@media (max-width: 500px)
+  .container
+    height: auto
+  .img-responsive
+    width: 40%
+  .gmap
+    width: auto
+    height: auto
+
