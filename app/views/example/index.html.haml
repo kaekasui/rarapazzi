@@ -1,5 +1,40 @@
+
+/ タイトル写真の段
+.contents
+  = image_tag 'title.gif', class: "img-responsive", alt: "title image"
+/ アイコンの段
+.container
+  .heading
+    %h2 Paparazziとは？
+  .row
+    .col-lg-4.col-md-4.col-sm-4.col-xs-12
+      .icon
+        %center
+          = image_tag 'iphone.png', class: "img-responsive", alt: "responsive image"
+      %h4.txt-contents{:align => "center"} 気になるブランドのコレクションの会場で撮影された写真を
+    .col-lg-4.col-md-4.col-sm-4.col-xs-12
+      .icon
+        %center
+          = image_tag 'instagram_icon.png', class: "img-responsive", alt: "responsive image"
+      %h4.txt-contents{:align => "center"} Instagramで
+    .col-lg-4.col-md-4.col-sm-4.col-xs-12
+      .icon
+        %center
+          = image_tag 'eye.png', class: "img-responsive", alt: "responsive image"
+      %h4.txt-contents{:align => "center"} リアルタイムにまとめてチェック
+/ 2段目
+.map
+  %img.gmap{:src => "photo/map.png"}/
+/ 3段目
+.lookbrandlist
+  %center
+    %h3 Paparazziを使ってみよう！
+  %center
+    %a.button{:href => "#"} ブランド一覧を見る
+
 %div{style: "width: 800px;"}
   #map{style: "width: 800px; height: 400px;"}
+
 / - @hoge.each do |h|
 /   - Instagram.location_recent_media(h.id).each do |media|
 /     = link_to media.link, :target => "_blank" do
