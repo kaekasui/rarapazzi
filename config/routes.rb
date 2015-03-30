@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   resources :events
   get 'example/index'
-  get 'example/secondview'
+
+  resources :brands
+  get 'beands/index'
 end
