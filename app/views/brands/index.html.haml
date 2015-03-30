@@ -1,84 +1,72 @@
-/ ナブバー
-%nav.navbar.navbar-inverse
-  .navbar-header
-    %button.navbar-toggle.cpllapse{"data-target" => "#collapse-header", "data-toggle" => "collapse", :type => "button"}
-      %span.sr-only Toggle navigation
-      %span.icon-bar
-      %span.icon-bar
-      %span.icon-bar
-    %a.navbar-brand{:href => "firstview.html"} PAPARAZZI
-  #collapse-header.collapse.navbar-collapse
-    %ul.nav.navbar-nav
-      %li
-        %a{:href => "about.html"} ABOUT
-      %li
-        %a{:href => "thirdview.html"} ブランド一覧
-      %li
-        %a{:href => "inquiry.html"} お問い合わせ
-      %li
-        %i.fa.fa-twitter.fa-2x
 / パンくずリスト
 .container
   %ul.breadcrumb
     %li
       %a{:href => "firstview.html"} トップ
     %li.active ブランド一覧
-/ タブバー
-.container{:style => "padding:20px 0"}
-  %ul.nav.nav-tabs{:style => "margin-bottom:15px"}
-    %li.active
-      %a{"data-toggle" => "tab", :href => "#2015AW"} 2015AW
-    %li
-      %a{"data-toggle" => "tab", :href => "#2015SS"} 2015SS
-    %li
-      %a{"data-toggle" => "tab", :href => "#2014AW"} 2014AW
-    %li
-      %a{"data-toggle" => "tab", :href => "#2014SS"} 2014SS
-    %li
-      %a{"data-toggle" => "tab", :href => "#2013AW"} 2013AW
-  .tab-content
-    #2015AW.tab-pane.active
-      .tab-title
-        %h3 2015AW
-      .contents
-        %a.button{:href => "thirdview.html"} Acne Studio
-        %a.button{:href => "thirdview.html"} Balencia
-        %a.button{:href => "thirdview.html"} CARV
-        %a.button{:href => "thirdview.html"} CELI
-        %a.button{:href => "thirdview.html"} Chloe
-        %a.button{:href => "thirdview.html"} ENFOLD
-        %a.button{:href => "thirdview.html"} GARSCON
-        %a.button{:href => "thirdview.html"} GIVENC
-        %a.button{:href => "thirdview.html"} G.V.G
-        %a.button{:href => "thirdview.html"} HYKE
-    #2015SS.tab-pane
-      .tab-title
-        %h3 2015SS
-      %a.button{:href => "thirdview.html"} ブランド名
-      %a.button{:href => "thirdview.html"} ブランド名
-      %a.button{:href => "thirdview.html"} ブランド名
-    #2014AW.tab-pane
-      .tab-title
-        %h3 2014AW
-      %a.button{:href => "thirdview.html"} ブランド名
-      %a.button{:href => "thirdview.html"} ブランド名
-      %a.button{:href => "thirdview.html"} ブランド名
-      %a.button{:href => "thirdview.html"} ブランド名
-      %a.button{:href => "thirdview.html"} ブランド名
-      %a.button{:href => "thirdview.html"} ブランド名
-      %a.button{:href => "thirdview.html"} ブランド名
-      %a.button{:href => "thirdview.html"} ブランド名
-      %a.button{:href => "thirdview.html"} ブランド名
-    #2014SS.tab-pane
-      .tab-title
-        %h3 2014SS
-      %a.button{:href => "thirdview.html"} ブランド名
-      %a.button{:href => "thirdview.html"} ブランド名
-      %a.button{:href => "thirdview.html"} ブランド名
-      %a.button{:href => "thirdview.html"} ブランド名
-      %a.button{:href => "thirdview.html"} ブランド名
-      %a.button{:href => "thirdview.html"} ブランド名
-    #2013AW.tab-pane
-      .tab-title
-        %h3 2013AW
-      %a.button{:href => "thirdview.html"} ブランド名
+  / タブバー
+  .container{:style => "padding:20px 0"}
+    %ul.nav.nav-tabs{:style => "margin-bottom:15px"}
+      %li.active
+        %a{"data-toggle" => "tab", :href => "#2015AW"} 2015AW
+      %li
+        %a{"data-toggle" => "tab", :href => "#2015SS"} 2015SS
+      %li
+        %a{"data-toggle" => "tab", :href => "#2014AW"} 2014AW
+      %li
+        %a{"data-toggle" => "tab", :href => "#2014SS"} 2014SS
+      %li
+        %a{"data-toggle" => "tab", :href => "#2013AW"} 2013AW
+    .tab-content
+      #2015AW.tab-pane.active
+        .tab-title
+          %h3 2015AW
+        .contents
+          %a.button{:href => "thirdview.html"} Acne Studio
+          %a.button{:href => "thirdview.html"} Balenciaga
+          %a.button{:href => "thirdview.html"} CARVEN
+          %a.button{:href => "thirdview.html"} CELINE
+          %a.button{:href => "thirdview.html"} Chloe
+          %a.button{:href => "thirdview.html"} ENFOLD
+          %a.button{:href => "thirdview.html"} COMME des GARÇONS
+          %a.button{:href => "thirdview.html"} GIVENCHY
+          %a.button{:href => "thirdview.html"} G.V.G.V
+          %a.button{:href => "thirdview.html"} HYKE
+      #2015SS.tab-pane
+        .tab-title
+          %h3 2015SS
+          %a.button{:href => "thirdview.html"} Acne Studio
+          %a.button{:href => "thirdview.html"} Balenciaga
+          %a.button{:href => "thirdview.html"} CARVEN
+          %a.button{:href => "thirdview.html"} CELINE
+          %a.button{:href => "thirdview.html"} Chloe
+          %a.button{:href => "thirdview.html"} ENFOLD
+          %a.button{:href => "thirdview.html"} COMME des GARÇONS
+          %a.button{:href => "thirdview.html"} GIVENCHY
+          %a.button{:href => "thirdview.html"} G.V.G.V
+          %a.button{:href => "thirdview.html"} HYKE
+      #2014AW.tab-pane
+        .tab-title
+          %h3 2014AW
+        %a.button{:href => "thirdview.html"} ブランド名
+        %a.button{:href => "thirdview.html"} ブランド名
+        %a.button{:href => "thirdview.html"} ブランド名
+        %a.button{:href => "thirdview.html"} ブランド名
+        %a.button{:href => "thirdview.html"} ブランド名
+        %a.button{:href => "thirdview.html"} ブランド名
+        %a.button{:href => "thirdview.html"} ブランド名
+        %a.button{:href => "thirdview.html"} ブランド名
+        %a.button{:href => "thirdview.html"} ブランド名
+      #2014SS.tab-pane
+        .tab-title
+          %h3 2014SS
+        %a.button{:href => "thirdview.html"} ブランド名
+        %a.button{:href => "thirdview.html"} ブランド名
+        %a.button{:href => "thirdview.html"} ブランド名
+        %a.button{:href => "thirdview.html"} ブランド名
+        %a.button{:href => "thirdview.html"} ブランド名
+        %a.button{:href => "thirdview.html"} ブランド名
+      #2013AW.tab-pane
+        .tab-title
+          %h3 2013AW
+        %a.button{:href => "thirdview.html"} ブランド名

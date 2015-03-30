@@ -7,4 +7,7 @@ Rails.application.routes.draw do
 
   resources :contact
   post 'contact/new'
+
+  resources :about
+  get 'about/index'
 end
