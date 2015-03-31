@@ -2,7 +2,7 @@
 .contents
   height: 0
   padding-top: 56.25%
-  background: url('image.jpg') 0 0 no-repeat
+  background: url('title.png') 0 0 no-repeat
   background-size: cover
 
 
@@ -29,9 +29,8 @@ img
 /*地図の段*/
 .map
   height: 600px
-  background-color: gray
-  padding: 0px 250px
-
+  background-color: #EEEEEE
+  padding: 40px 250px
 
 // 3段目
 .lookbrandlist
@@ -67,3 +66,24 @@ img
     box-sizing: border-box
     -webkit-transition: all .3s
     transition: all .3s
+
+  // レスポンシブ対応
+  @media (max-width: 1000px)
+
+  @media (max-width: 800px)
+    .container
+      height: auto
+      .img-responsive
+      width: 40%
+    .gmap
+      height: auto
+      width: auto
+
+  @media (max-width: 500px)
+    .container
+      height: auto
+      .img-responsive
+      width: 30%
+    .gmap
+      width: auto
+      height: auto
