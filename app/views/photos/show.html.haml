@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Link:
+  = @photo.link
+%p
+  %b Image url:
+  = @photo.image_url
+%p
+  %b Event:
+  = @photo.event_id
+
+= link_to 'Edit', edit_photo_path(@photo)
+\|
+= link_to 'Back', photos_path
