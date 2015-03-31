@@ -1,71 +1,96 @@
 / パンくずリスト
-.container
+.container2
   %ul.breadcrumb
     %li
-      %a{:href => "/example/index"} トップ
+      %a{:href => "firstview.html"} トップ
     %li.active ブランド一覧
-  /タブバー
-  .container{:style => "padding:20px 0"}
-    %ul.nav.nav-tabs{:style => "margin-bottom:15px"}
-      %li.active
-        %a{"data-toggle" => "tab", :href => "#2015AW"} 2015AW
-      %li
-        %a{"data-toggle" => "tab", :href => "#2015SS"} 2015SS
-      %li
-        %a{"data-toggle" => "tab", :href => "#2014AW"} 2014AW
-      %li
-        %a{"data-toggle" => "tab", :href => "#2014SS"} 2014SS
-      %li
-        %a{"data-toggle" => "tab", :href => "#2013AW"} 2013AW
-    .tab-content
-      #2015AW.tab-pane.active
-        .tab-title
-          %h3 2015AW
-          %a.button{:href => "thirdview.html"} Acne Studio
-          %a.button{:href => "thirdview.html"} Balenciaga
-          %a.button{:href => "thirdview.html"} CARVEN
-          %a.button{:href => "thirdview.html"} CELINE
-          %a.button{:href => "thirdview.html"} Chloe
-          %a.button{:href => "thirdview.html"} ENFOLD
-          %a.button{:href => "thirdview.html"} COMME des GARÇONS
-          %a.button{:href => "thirdview.html"} GIVENCHY
-          %a.button{:href => "thirdview.html"} G.V.G.V
-          %a.button{:href => "thirdview.html"} HYKE
-      #2015SS.tab-pane
-        .tab-title
-          %h3 2015SS
-          %a.button{:href => "thirdview.html"} Acne Studio
-          %a.button{:href => "thirdview.html"} Balenciaga
-          %a.button{:href => "thirdview.html"} CARVEN
-          %a.button{:href => "thirdview.html"} CELINE
-          %a.button{:href => "thirdview.html"} Chloe
-          %a.button{:href => "thirdview.html"} ENFOLD
-          %a.button{:href => "thirdview.html"} COMME des GARÇONS
-          %a.button{:href => "thirdview.html"} GIVENCHY
-          %a.button{:href => "thirdview.html"} G.V.G.V
-          %a.button{:href => "thirdview.html"} HYKE
-      #2014AW.tab-pane
-        .tab-title
-          %h3 2014AW
-        %a.button{:href => "thirdview.html"} ブランド名
-        %a.button{:href => "thirdview.html"} ブランド名
-        %a.button{:href => "thirdview.html"} ブランド名
-        %a.button{:href => "thirdview.html"} ブランド名
-        %a.button{:href => "thirdview.html"} ブランド名
-        %a.button{:href => "thirdview.html"} ブランド名
-        %a.button{:href => "thirdview.html"} ブランド名
-        %a.button{:href => "thirdview.html"} ブランド名
-        %a.button{:href => "thirdview.html"} ブランド名
-      #2014SS.tab-pane
-        .tab-title
-          %h3 2014SS
-        %a.button{:href => "thirdview.html"} ブランド名
-        %a.button{:href => "thirdview.html"} ブランド名
-        %a.button{:href => "thirdview.html"} ブランド名
-        %a.button{:href => "thirdview.html"} ブランド名
-        %a.button{:href => "thirdview.html"} ブランド名
-        %a.button{:href => "thirdview.html"} ブランド名
-      #2013AW.tab-pane
-        .tab-title
-          %h3 2013AW
-        %a.button{:href => "thirdview.html"} ブランド名
+/ タブバー
+.container3
+  %ul.nav.nav-tabs{:style => "margin-bottom:15px"}
+    %li.active
+      %a{"data-toggle" => "tab", :href => "#2015AW"} 2015AW
+    %li
+      %a{"data-toggle" => "tab", :href => "#2015SS"} 2015SS
+    %li
+      %a{"data-toggle" => "tab", :href => "#2014AW"} 2014AW
+    %li
+      %a{"data-toggle" => "tab", :href => "#2014SS"} 2014SS
+    %li
+      %a{"data-toggle" => "tab", :href => "#2013AW"} 2013AW
+  .tab-content
+    #2015AW.tab-pane.active
+      .tab-title
+        %h3 2015AWコレクションブランド一覧
+        %img.brands-image
+        = image_tag 'runway.jpg', alt: "runway image"
+      .contents
+        %a.button{:href => "#"} Acne Studio
+        %a.button{:href => "#"} Balenciaga
+        %a.button{:href => "#"} CARVEN
+        %a.button{:href => "#"} CELINE
+        %a.button{:href => "#"} Chloe
+        %a.button{:href => "#"} ENFOLD
+        %a.button{:href => "#"} GARSCON
+        %a.button{:href => "#"} GIVENC
+        %a.button{:href => "#"} G.V.G.V
+        %a.button{:href => "#"} HYKE
+    #2015SS.tab-pane
+      .tab-title
+        %h3 2015SSコレクションブランド一覧
+        %img.brands-image
+        = image_tag 'runway2.jpg', alt: "runway image"
+      %a.button{:href => "#"} Acne Studio
+      %a.button{:href => "#"} Balenciaga
+      %a.button{:href => "#"} CARVEN
+      %a.button{:href => "#"} CELINE
+      %a.button{:href => "#"} Chloe
+      %a.button{:href => "#"} ENFOLD
+      %a.button{:href => "#"} GARSCON
+      %a.button{:href => "#"} GIVENC
+      %a.button{:href => "#"} G.V.G.V
+      %a.button{:href => "#"} HYKE
+    #2014AW.tab-pane
+      .tab-title
+        %h3 2014AWコレクションブランド一覧
+        %img.brands-image
+        = image_tag 'runway3.jpg', alt: "runway image"
+      %a.button{:href => "#"} Acne Studio
+      %a.button{:href => "#"} Balenciaga
+      %a.button{:href => "#"} CARVEN
+      %a.button{:href => "#"} CELINE
+      %a.button{:href => "#"} Chloe
+      %a.button{:href => "#"} ENFOLD
+      %a.button{:href => "#"} GARSCON
+      %a.button{:href => "#"} GIVENC
+      %a.button{:href => "#"} G.V.G.V
+      %a.button{:href => "#"} HYKE
+    #2014SS.tab-pane
+      .tab-title
+        %h3 2014SSコレクションブランド一覧
+        %img.brands-image
+        = image_tag 'runway4.jpg', alt: "runway image"
+      %a.button{:href => "#"} Acne Studio
+      %a.button{:href => "#"} Balenciaga
+      %a.button{:href => "#"} CARVEN
+      %a.button{:href => "#"} CELINE
+      %a.button{:href => "#"} Chloe
+      %a.button{:href => "#"} ENFOLD
+      %a.button{:href => "#"} GARSCON
+      %a.button{:href => "#"} GIVENC
+      %a.button{:href => "#"} G.V.G.V
+      %a.button{:href => "#"} HYKE
+    #2013AW.tab-pane
+      .tab-title
+        %h3 2013AWコレクションブランド一覧
+        %img.brands-image
+        = image_tag 'runway5.jpg', alt: "runway image"
+      %a.button{:href => "#"} Acne Studio
+      %a.button{:href => "#"} Balenciaga
+      %a.button{:href => "#"} CARVEN
+      %a.button{:href => "#"} CELINE
+      %a.button{:href => "#"} Chloe
+      %a.button{:href => "#"} ENFOLD
+      %a.button{:href => "#"} GARSCON
+      %a.button{:href => "#"} GIVENC
+      %a.button{:href => "#"} G.V.G.V
+      %a.button{:href => "#"} HYKE

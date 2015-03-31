@@ -1,9 +1,20 @@
-.container
-  padding-top: 20px
+.container2
+  padding: 20px
 
-.list
-  width: 1100px
+.container3
+  padding: 20px 70px
+
+.nav
   margin: 0 auto
+
+.brands-image
+  display: block
+  margin-left: auto
+  margin-right: auto
+  margin-top: 20px
+
+.contents
+  padding: 0 20px
 
 .button
   display: inline-block
@@ -15,10 +26,11 @@
   outline: none
   position: relative
   z-index: 2
-  background-color: #848484
-  border: 2px solid #EEEEEE
-  color: #EEEEEE
+  background-color: #fff
+  border: 2px solid gray
+  color: gray
   line-height: 48px
+  margin: 60px 20px
   &::after
     top: 4px
     left: 4px
@@ -26,7 +38,7 @@
     height: 42px
     text-decoration: none
     border: 2px solid #F0EA40
-    opacity: 20
+    opacity: 0
   &::before, &::after
     position: absolute
     z-index: -1
@@ -50,15 +62,30 @@
     transition: all .3s
     text-decoration: none
 
-// レスポンシブ対応
+.footer
+  height: 100px
+  background-color: #F0EA40
+  width: none
+
+  // レスポンシブ対応
 @media (max-width: 1000px)
 
 @media (max-width: 800px)
-.container
-  width: 80%
-.button
-  margin: 0 auto
+  .container2
+    width: 80%
+  .button
+    margin: 2px auto
+  .brands-image
+    margin-top: 10px
+  img
+    width: 100%
 
 @media (max-width: 500px)
-.container
-  width: 80%
+  .container2
+    width: 80%
+  .button
+    margin: 25px auto
+  .brands-image
+    margin-top: 10px
+  img
+    width: 100%
