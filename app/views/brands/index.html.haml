@@ -2,21 +2,21 @@
 .container2
   %ul.breadcrumb
     %li
-      %a{:href => "firstview.html"} トップ
+      = link_to 'トップ', example_index_path
     %li.active ブランド一覧
 / タブバー
 .container3
   %ul.nav.nav-tabs{:style => "margin-bottom:15px"}
     %li.active
-      %a{"data-toggle" => "tab", :href => "#2015AW"} 2015AW
+      %a{"data-toggle" => "tab", :href => "#2015AW"} 2015 AW
     %li
-      %a{"data-toggle" => "tab", :href => "#2015SS"} 2015SS
+      %a{"data-toggle" => "tab", :href => "#2015SS"} 2015 SS
     %li
-      %a{"data-toggle" => "tab", :href => "#2014AW"} 2014AW
+      %a{"data-toggle" => "tab", :href => "#2014AW"} 2014 AW
     %li
-      %a{"data-toggle" => "tab", :href => "#2014SS"} 2014SS
+      %a{"data-toggle" => "tab", :href => "#2014SS"} 2014 SS
     %li
-      %a{"data-toggle" => "tab", :href => "#2013AW"} 2013AW
+      %a{"data-toggle" => "tab", :href => "#2013AW"} 2013 AW
   .tab-content
     #2015AW.tab-pane.active
       .tab-title

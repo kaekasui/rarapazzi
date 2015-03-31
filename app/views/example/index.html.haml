@@ -43,7 +43,7 @@
   %center
     %h3 Paparazziを使ってみよう！
   %center
-    %a.button{:href => "/brands"} ブランド一覧を見る
+    =link_to 'ブランド一覧を見る', '/brands', class: "button"
 
 :javascript
   buildMap(#{raw @hash.to_json});

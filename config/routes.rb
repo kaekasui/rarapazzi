@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get 'example/index'
 
   resources :brands do
-    resources :events 
+    resources :events
   end
   resources :events, only: [] do
     resources :photos

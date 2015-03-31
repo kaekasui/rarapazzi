@@ -14,15 +14,17 @@
           %span.icon-bar
           %span.icon-bar
           %span.icon-bar
-        %a.navbar-brand{:href => "/example/index"} PAPARAZZI
+        =link_to 'PAPARAZZI', example_index_path, class: "navbar-brand"
       #collapse-header.collapse.navbar-collapse
         %ul.nav.navbar-nav.navbar-right
           %li
-            %a{:href => "/about"} ABOUT
+            = link_to 'About', about_index_path
           %li
-            %a{:href => "/brands"} ブランド一覧
+            = link_to 'ブランド一覧', brands_path
           %li
-            %a{:href => "/contact/new"} お問い合わせ
+            = link_to 'お問い合わせ', new_contact_path
+          %li
+            = link_to '作成する', new_brand_path
 
     =yield
 
