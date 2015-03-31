@@ -4,5 +4,8 @@
     %li
       = link_to 'トップ', example_index_path
     %li
-      =link_to 'ブランド一覧', brand_path
-    %li.active ◯◯◯（ブランド名）
+      =link_to 'ブランド一覧', brands_path
+    %li.active
+      = @brand.name
+
+  = link_to 'new', new_brand_event_path(@brand)

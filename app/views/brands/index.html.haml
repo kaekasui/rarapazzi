@@ -23,16 +23,8 @@
         %h3 2015AWコレクションブランド一覧
         %img.brands-image
         = image_tag 'runway.jpg', alt: "runway image"
-        %a.button{:href => "#"} Acne Studio
-        %a.button{:href => "#"} ANLEARAGE
-        %a.button{:href => "#"} CELINE
-        %a.button{:href => "#"} Chloe
-        %a.button{:href => "#"} COMME des GARÇONS
-        %a.button{:href => "#"} G.V.G.V
-        %a.button{:href => "#"} HYKE
-        %a.button{:href => "#"} ISSEY MIYAKE
-        %a.button{:href => "#"} sacai
-        %a.button{:href => "#"} Yohji Yamamoto
+        - @brands.each do |brand|
+          = link_to brand.name, brand_path(brand), class: "button"
     #2015SS.tab-pane
       .tab-title
         %h3 2015SSコレクションブランド一覧

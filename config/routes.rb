@@ -1,7 +1,4 @@
 Rails.application.routes.draw do
-  resources :brands
-  resources :photos
-  resources :events
   get 'example/index'
 
   resources :brands do

@@ -10,11 +10,13 @@ class EventsController < ApplicationController
   # GET /events/1
   # GET /events/1.json
   def show
+    @brand = Brand.find(params[:brand_id])
     @hoge = Instagram.location_search(@event.latitude, @event.longitude)
   end
 
   # GET /events/new
   def new
+    @brand = Brand.find(params[:brand_id])
     @event = Event.new
   end
 
@@ -25,11 +27,12 @@ class EventsController < ApplicationController
   # POST /events
   # POST /events.json
   def create
-    @event = Event.new(event_params)
+    @brand = Brand.find(params[:brand_id])
+    @event = @brand.events.build(event_params)
 
     respond_to do |format|
       if @event.save
-        format.html { redirect_to @event, notice: 'Event was successfully created.' }
+        format.html { redirect_to brand_event_path(@brand,@event), notice: 'Event was successfully created.' }
         format.json { render :show, status: :created, location: @event }
       else
         format.html { render :new }

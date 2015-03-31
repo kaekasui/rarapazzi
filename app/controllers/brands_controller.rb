@@ -9,7 +9,7 @@ class BrandsController < ApplicationController
 
   # GET /brands/1
   # GET /brands/1.json
-  def show
+  def show    
   end
 
   # GET /brands/new

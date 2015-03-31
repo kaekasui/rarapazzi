@@ -22,9 +22,9 @@
   %b Datetime:
   = @event.datetime
 
-= link_to 'Edit', edit_event_path(@event)
+= link_to 'Edit', edit_brand_event_path(@brand, @event)
 \|
-= link_to 'Back', events_path
+= link_to 'Back', brand_events_path(@brand)
 
 - @hoge.each do |h|
   - Instagram.location_recent_media(h.id).each do |media|
