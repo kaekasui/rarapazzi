@@ -27,11 +27,19 @@ class EventsController < ApplicationController
   # POST /events
   # POST /events.json
   def create
+    # - @hoge.each do |h|
+    #   - Instagram.location_recent_media(h.id).each do |media|
+    #     = link_to media.link, :target => "_blank" do
+    #       =image_tag(media.images.low_resolution.url)
+    # @hoge = Instagram.location_search(@event.latitude, @event.longitude)
     @brand = Brand.find(params[:brand_id])
     @event = @brand.events.build(event_params)
 
     respond_to do |format|
       if @event.save
+          # t.string   "link"
+          #  t.string   "image_url"
+        #@event.photos.build(image_url: media.images.low_resolution.url, link: media.link)
         format.html { redirect_to brand_event_path(@brand,@event), notice: 'Event was successfully created.' }
         format.json { render :show, status: :created, location: @event }
       else
