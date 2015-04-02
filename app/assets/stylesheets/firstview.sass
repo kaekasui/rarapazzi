@@ -2,8 +2,12 @@
 .contents
   height: 600px
   padding-top: 56.25%
-  background: url('image.jpg') 0 0 no-repeat
+  background-image: url('image.jpg')
+  background-repeat: no-repeat
   background-size: cover
+  .title-image
+    width: 80%
+    padding-top: 170px
 
 
 // 3つアイコンの段
@@ -73,27 +77,30 @@ img
     -webkit-transition: all .3s
     transition: all .3s
 
-  // レスポンシブ対応
-  @media (max-width: 1000px)
+// レスポンシブ対応
+@media (max-width: 1000px)
 
-  @media (max-width: 800px)
-    .contents
+@media (max-width: 800px)
+  .contents
+    height: 400px
+    width: 100%
+  .container
+    height: auto
+    .img-responsive
       width: 100%
-    .container
-      height: auto
-      .img-responsive
-        width: 100%
-    .gmap
-      height: auto
-      width: auto
+  .gmap
+    height: auto
+    width: auto
 
-  @media (max-width: 500px)
-    .background
-      width: 50%
-    .container
-      height: auto
-      .img-responsive
-        width: 100%
-    .gmap
-      width: auto
-      height: auto
+@media (max-width: 500px)
+  .contents
+    height: 250px
+  .background
+    width: 50%
+  .container
+    height: auto
+    .img-responsive
+      width: 100%
+  .gmap
+    width: auto
+    height: auto

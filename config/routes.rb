@@ -13,4 +13,6 @@ Rails.application.routes.draw do
 
   resources :about
   get 'about/index'
+
+  root to: 'example#index'
 end

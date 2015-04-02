@@ -1,0 +1,9 @@
+/Users/Lisaco/.rbenv/versions/2.2.0/bin/ruby -r ./siteconf20150402-31149-usgry7.rb extconf.rb 
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+make "DESTDIR=" install
