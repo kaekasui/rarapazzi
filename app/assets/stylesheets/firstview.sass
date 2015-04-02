@@ -2,14 +2,14 @@
 .contents
   height: 600px
   padding-top: 56.25%
-  background: url('title.png') 0 0 no-repeat
+  background: url('image.jpg') 0 0 no-repeat
   background-size: cover
 
 
 // 3つアイコンの段
 .container
   width: none
-  height: 600px
+  height: 500px
 
 .heading
   margin: 80px
@@ -28,14 +28,19 @@ img
 
 /*地図の段*/
 .map
-  height: 600px
+  height: 550px
   background-color: #EEEEEE
+  padding-top: 60px
   padding: 40px 250px
 
 // 3段目
 .lookbrandlist
-  height: 300px
+  height: 220px
   background-color: white
+.lookbrandlist h3
+  inline-block: block
+  padding-top: 30px
+
 
 .button
   display: inline-block
@@ -48,6 +53,7 @@ img
   background-color: #333
   color: #fff
   margin-top: 140px
+  margin-bottom: 30px
   &:before, &:after
     position: absolute
     z-index: -1
@@ -71,19 +77,23 @@ img
   @media (max-width: 1000px)
 
   @media (max-width: 800px)
+    .contents
+      width: 100%
     .container
       height: auto
       .img-responsive
-      width: 40%
+        width: 100%
     .gmap
       height: auto
       width: auto
 
   @media (max-width: 500px)
+    .background
+      width: 50%
     .container
       height: auto
       .img-responsive
-      width: 30%
+        width: 100%
     .gmap
       width: auto
       height: auto

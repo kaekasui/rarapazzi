@@ -5,6 +5,7 @@
     =javascript_include_tag 'application'
     =csrf_meta_tags
     %meta{:charset => "UTF-8"}
+    %meta{:name => "viewport", :content => "width=device-width, initial-scale=1"}
     %title paparazzi
   %body
     %nav.navbar.navbar-inverse
@@ -25,6 +26,12 @@
             = link_to 'お問い合わせ', new_contact_path
           %li
             = link_to '作成する', new_brand_path
+          %li
+            = link_to 'https://twitter.com/paparazzi__info?lang=ja' do
+              %i.fa.fa-twitter.fa-2x
+          %li
+            = link_to 'https://www.facebook.com/pages/Paparazzi' do
+              %i.fa.fa-facebook.fa-2x
 
     =yield
 
