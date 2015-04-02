@@ -1,6 +1,12 @@
 class BrandsController < ApplicationController
   before_action :set_brand, only: [:show, :edit, :update, :destroy]
 
+   http_basic_authenticate_with name: "lisaco", password: "rskfrkw", except: [:show, :index]
+
+def index
+    @articles = Article.all
+  end
+
   # GET /brands
   # GET /brands.json
   def index
@@ -9,7 +15,7 @@ class BrandsController < ApplicationController
 
   # GET /brands/1
   # GET /brands/1.json
-  def show    
+  def show
   end
 
   # GET /brands/new
