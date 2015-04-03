@@ -23,6 +23,7 @@ class EventsController < ApplicationController
 
   # GET /events/1/edit
   def edit
+    @brand = Brand.find(params[:brand_id])
   end
 
   # POST /events
@@ -36,8 +37,12 @@ class EventsController < ApplicationController
       if @event.save
         @Insta = Instagram.location_search(@event.latitude, @event.longitude)
         @Insta.each do |h|
-          Instagram.location_recent_media(h.id).each do |media|
-            @event.photos.build(image_url: media.images.low_resolution.url, link: media.link)
+          Instagram.location_recent_media(h.id, {min_timestamp: (@event.datetime.to_i).to_s, max_timestamp: (@event.datetime.to_i + @event.timespan.to_i*60*60).to_s} ).each do |media|
+            @photo =@event.photos.build(image_url: media.images.low_resolution.url, link: media.link)
+            if @photo.save
+            else
+              raise
+            end
           end
         end
 
@@ -82,6 +87,6 @@ class EventsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def event_params
-      params.require(:event).permit(:brand_id, :latitude, :longitude, :address, :description, :title, :datetime)
+      params.require(:event).permit(:timespan, :latitude, :longitude, :address, :description, :title, :datetime)
     end
 end

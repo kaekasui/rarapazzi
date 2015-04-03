@@ -2,10 +2,10 @@
   - if @event.errors.any?
     #error_explanation
       %h2= "#{pluralize(@event.errors.count, "error")} prohibited this event from being saved:"
-      %ul
-        - @event.errors.full_messages.each do |msg|
-          %li= msg
 
+  .field
+    = f.label :timespan
+    = f.number_field :timespan, max: 10, min: 1, value: 1 ,class: "form-control"
   %br
   .field
     = f.label :address

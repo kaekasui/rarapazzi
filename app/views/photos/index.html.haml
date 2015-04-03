@@ -17,7 +17,7 @@
         %td= photo.image_url
         %td= photo.event_id
         %td= link_to 'Show', photo
-        %td= link_to 'Edit', edit_photo_path(photo)
+        %td= link_to 'Edit', edit_photo_path(photo) ,class: "btn btn-default"
         %td= link_to 'Destroy', photo, :method => :delete, :data => { :confirm => 'Are you sure?' }
 
 %br
