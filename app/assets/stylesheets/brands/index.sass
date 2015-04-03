@@ -9,8 +9,7 @@
 
 .brands-image
   display: block
-  margin-left: auto
-  margin-right: auto
+  width: 120%
   margin-top: 20px
 
 .contents
@@ -31,6 +30,12 @@
   color: gray
   line-height: 48px
   margin: 60px 20px
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  -webkit-transition: all .3s
+  transition: all .3s
+  text-decoration: none
   &::after
     top: 4px
     left: 4px
@@ -45,15 +50,11 @@
     display: block
     content: ''
     text-decoration: none
+  &:hover
+    text-decoration: none
   &:hover::after
     opacity: 1
     text-decoration: none
-  -webkit-box-sizing: border-box
-  -moz-box-sizing: border-box
-  box-sizing: border-box
-  -webkit-transition: all .3s
-  transition: all .3s
-  text-decoration: none
   &::before, &::after
     -webkit-box-sizing: border-box
     -moz-box-sizing: border-box

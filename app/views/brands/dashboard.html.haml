@@ -1,0 +1,4 @@
+- @brands.each do |brand|
+  .div
+    = brand.name
+    = link_to "削除する", brand_path(brand), method: :delete, data: {confirm: "削除しますか？"}

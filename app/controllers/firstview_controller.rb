@@ -1,4 +1,4 @@
-class ExampleController < ApplicationController
+class FirstviewController < ApplicationController
   def index
     @events = Event.all
 

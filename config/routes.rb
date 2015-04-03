@@ -1,15 +1,16 @@
 Rails.application.routes.draw do
-  get 'example/index'
 
   resources :brands do
+    collection do
+      get "dashboard"
+    end
     resources :events
   end
   resources :events, only: [] do
     resources :photos
-  1
   end
 
   resources :contact
 
-  root to: 'example#index'
+  root to: 'firstview#index'
 end

@@ -1,0 +1,29 @@
+Searching 11721 files for "作成する"
+
+/Users/Lisaco/Desktop/rarapazzi/app/views/brands/new.html.haml:
+    6      %li
+    7        = link_to 'ブランド一覧', brands_path
+    8:     %li.active 作成する
+    9  .contants
+   10    %h3 New brand
+
+/Users/Lisaco/Desktop/rarapazzi/app/views/layouts/application.html.haml:
+   24              = link_to 'お問い合わせ', new_contact_path
+   25            %li
+   26:             = link_to '作成する', new_brand_path
+   27            %li
+   28              = link_to 'https://twitter.com/paparazzi__info?lang=ja' do
+
+2 matches across 2 files
+
+
+Searching 11722 files for "編集する"
+
+/Users/Lisaco/Desktop/rarapazzi/app/views/layouts/application.html.haml:
+   24              = link_to 'お問い合わせ', new_contact_path
+   25            %li
+   26:             = link_to '編集する', dashboard_brands_path
+   27            %li
+   28              = link_to 'https://twitter.com/paparazzi__info?lang=ja' do
+
+1 match in 1 file
