@@ -6,9 +6,9 @@
     %li
       = link_to 'ブランド一覧', brands_path
     %li.active 作成する
-
-%h1 New brand
-
-= render 'form'
-
-= link_to 'Back', brands_path
+.contants
+  %h3 New brand
+  %br/
+  = render 'form'
+  %br/
+  = link_to 'Back', brands_path, class: "btn btn-default"

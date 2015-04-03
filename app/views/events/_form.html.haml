@@ -6,26 +6,22 @@
         - @event.errors.full_messages.each do |msg|
           %li= msg
 
-  .field
-    = f.label :brand_id
-    = f.number_field :brand_id
-  .field
-    = f.label :latitude
-    = f.text_field :latitude
-  .field
-    = f.label :longitude
-    = f.text_field :longitude
+  %br
   .field
     = f.label :address
-    = f.text_field :address
+    = f.text_field :address, class: "form-control"
+  %br
   .field
     = f.label :description
-    = f.text_area :description
+    = f.text_area :description, class: "form-control"
+  %br
   .field
     = f.label :title
-    = f.text_field :title
+    = f.text_field :title, class: "form-control"
+  %br
   .field
     = f.label :datetime
     = f.datetime_select :datetime
+  %br
   .actions
-    = f.submit 'Save'
+    = f.submit 'Save', class: "btn btn-default"

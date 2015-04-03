@@ -5,27 +5,32 @@
       = link_to 'トップ', example_index_path
     %li.active お問い合わせ
 
-/ お問合わせ
-.inquiry
-  %h2 お問い合わせ
-.content
-  %form.form-horizontal{:style => "margin:15px 0;"}
-    .form-group
-      %label.control-label.col-sm-2{:for => "email"} 氏名
-      .col-sm-4
-        %input#email.form-control{:placeholder => "氏名", :type => "text"}/
-    .form-group
-      %label.control-label.col-sm-2{:for => "email"} アドレス
-      .col-sm-5
-        %input#email.form-control{:placeholder => "アドレス", :type => "text"}/
-    .form-group
-      %label.control-label.col-sm-2{:for => "email"} アドレス（確認）
-      .col-sm-5
-        %input#email.form-control{:placeholder => "アドレス（確認）", :type => "text"}/
-    .form-group
-      %label.col-sm-2.control-label お問い合わせ内容
-      .col-sm-8
-        %textarea.form-control{:rows => "7"}
-    .form-group
-      %center
-        %a.btn.btn-info.sent-btn{:href => "inquiry-done.html"} 送信
+  / お問合わせ
+  .inquiry
+    %h2 お問い合わせ
+    .content
+      %form.form-horizontal{:style => "margin:15px 0;"}
+
+        .form-group
+          %label.control-label.col-sm-2{:for => "email"} 氏名
+          .col-sm-4
+            %input#email.form-control{:placeholder => "氏名", :type => "text"}/
+
+        .form-group
+          %label.control-label.col-sm-2{:for => "email"} アドレス
+          .col-sm-5
+            %input#email.form-control{:placeholder => "アドレス", :type => "text"}/
+
+        .form-group
+          %label.control-label.col-sm-2{:for => "email"} アドレス（確認）
+          .col-sm-5
+            %input#email.form-control{:placeholder => "アドレス（確認）", :type => "text"}/
+
+        .form-group
+          %label.col-sm-2.control-label お問い合わせ内容
+          .col-sm-8
+            %textarea.form-control{:rows => "7"}
+
+        .form-group
+          %center
+            %a.btn.btn-info.sent-btn{:href => "inquiry-done.html"} 送信

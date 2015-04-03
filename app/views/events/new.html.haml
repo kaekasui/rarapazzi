@@ -1,5 +1,8 @@
-%h1 New event
-
-= render 'form'
-
-= link_to 'Back', brand_events_path(@brand)
+.contants
+  %br/
+  %h3 New event（イベント登録ページ）
+  %br/
+  %br/
+  = render 'form'
+  %br/
+  = link_to 'Back', brand_events_path(@brand), class: "btn btn-default"

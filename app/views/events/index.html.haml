@@ -24,10 +24,10 @@
         %td= event.description
         %td= event.title
         %td= event.datetime
-        %td= link_to 'Show', event
-        %td= link_to 'Edit', edit_event_path(event)
-        %td= link_to 'Destroy', event, :method => :delete, :data => { :confirm => 'Are you sure?' }
+        %td= link_to 'Show', brand_event_path(@brand, event)
+        %td= link_to 'Edit', edit_brand_event_path(@brand, event)
+        %td= link_to 'Destroy', brand_event_path(@brand, event), :method => :delete, :data => { :confirm => 'Are you sure?' }
 
 %br
 
-= link_to 'New Event', new_event_path
+= link_to 'New Event', new_brand_event_path(@brand)
