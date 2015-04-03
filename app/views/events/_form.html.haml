@@ -5,7 +5,7 @@
 
   .field
     = f.label :timespan
-    = f.number_field :timespan, max: 10, min: 1, value: 1 ,class: "form-control"
+    = f.number_field :timespan, max: 10, min: 1, value: 1, class: "form-control"
   %br
   .field
     = f.label :address
@@ -21,7 +21,7 @@
   %br
   .field
     = f.label :datetime
-    = f.datetime_select :datetime
+    = f.datetime_select :datetime, class: "form-control"
   %br
   .actions
     = f.submit 'Save', class: "btn btn-default"

@@ -16,10 +16,10 @@
         %td= photo.link
         %td= photo.image_url
         %td= photo.event_id
-        %td= link_to 'Show', photo
+        %td= link_to 'Show', photo, class: "btn btn-default"
         %td= link_to 'Edit', edit_photo_path(photo) ,class: "btn btn-default"
-        %td= link_to 'Destroy', photo, :method => :delete, :data => { :confirm => 'Are you sure?' }
+        %td= link_to 'Destroy', photo, :method => :delete, :data => { :confirm => 'Are you sure?' }, class: "btn btn-default"
 
 %br
 
-= link_to 'New Photo', new_photo_path
+= link_to 'New Photo', new_photo_path, class: "btn btn-default"

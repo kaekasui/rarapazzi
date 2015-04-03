@@ -6,13 +6,14 @@ Rails.application.routes.draw do
   end
   resources :events, only: [] do
     resources :photos
+  1
   end
 
   resources :contact
-  post 'contact/new'
 
   resources :about
-  get 'about/index'
+
+  resources :photos
 
   root to: 'example#index'
 end
