@@ -11,9 +11,5 @@ Rails.application.routes.draw do
 
   resources :contact
 
-  resources :about
-
-  resources :photos
-
   root to: 'example#index'
 end
